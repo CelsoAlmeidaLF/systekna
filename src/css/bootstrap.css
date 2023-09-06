@@ -12,7 +12,7 @@ body {
     min-width: 100%;
     min-height: 100%;
     position: absolute;
-    color: #212529;
+    color:#010124;
     background-color: #fff;
     text-align: left;
     font-family: 'Poppins', 'sans-serif';
@@ -406,6 +406,29 @@ section {
     top: 0;
     left: 0;
     right: 0;
+}
+
+.fixed-navbar-top {
+    transition: all .4s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #eee;
+    color: #010124;
+    box-shadow: 0px 4px 12px #000;
+}
+
+.fixed-navbar-top a {
+    color: #010124;
+}
+
+
+.fixed-navbar-top a:hover,
+.fixed-navbar-top .active
+ { 
+    color: #010124;
+    border-bottom: 2px solid  #010124; 
 }
 
 .fixed-bottom {
