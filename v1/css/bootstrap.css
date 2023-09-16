@@ -4,6 +4,7 @@
 * {
     text-decoration: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -337,6 +338,7 @@ section {
 
 .card a { color: white; }
 .card ul li { list-style-type: none; }
+
 .social { margin: 2em 0; }
 
 .social ul {
