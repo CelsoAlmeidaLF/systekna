@@ -1,3 +1,8 @@
+/* My Bootstrap 
+   v 1.0.0 
+   by: Systekna.com
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@100;200&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -130,7 +135,7 @@ header {
 }
 
 section {
-    top: 0;
+    position: relative;
     z-index: -10;
 }
 
@@ -142,8 +147,6 @@ footer {
     padding: 8px 0px;
     z-index: 99;
 }
-
-
 
 /* ################################ Container PAI da pagina ######################### */
 
@@ -206,6 +209,43 @@ footer {
     font-size: 0.8rem;
     padding-top: 32px !important;
     z-index: 99;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) or (max-width: 596px) {
+
+    .footer {
+        max-height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footer p {
+        margin-bottom: 32px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .footer {
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 0.8rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    .footer p {
+        font-size: 1.2rem;
+        margin-bottom: 32px;
+    }
 }
 
 /* ################################ Layout do navbar ################################ */
@@ -344,8 +384,30 @@ footer {
     background-color: var(--color-primary);
 }
 
+/* ################################ Layout do brand ################################ */
+
+.navbar-brand {
+    margin: 32px 8px;
+    padding-left: 20px;
+}
+
+.brand {
+    color: var(--color-brand);
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    display: block;
+    font-family: 'Monoton', 'sans-serif';
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) or (max-width: 596px) {
+
+    .navbar-brand {
+        font-size: 2em;
+        padding: 20px 20px;
+        margin: 0;
+    }
+
     .navbar .navbar-collapse {
         display: none;
         visibility: hidden;
@@ -354,6 +416,8 @@ footer {
     .navbar .btn-menu {
         display: block;
         visibility: visible;
+        padding: 0;
+        margin: 12px;
     }
 }
 
@@ -372,6 +436,7 @@ footer {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
     .navbar .btn-menu,
     .navbar .navbar-collapse .btn-close 
     {
@@ -387,6 +452,7 @@ footer {
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
     .navbar .btn-menu,
     .navbar .navbar-collapse .btn-close 
     {
@@ -415,20 +481,6 @@ footer {
     }
 }
 
-/* ################################ Layout do brand ################################ */
-
-.navbar-brand {
-    margin: 32px 8px;
-    padding-left: 20px;
-}
-
-.brand {
-    color: var(--color-brand);
-    font-size: 2.8rem;
-    text-transform: uppercase;
-    display: block;
-    font-family: 'Monoton', 'sans-serif';
-}
 
 /* ################################ Background Color ################################ */
 
@@ -1010,9 +1062,9 @@ footer {
     left: 0;
     z-index: 1030;
   }
-  
-  .fixed-top .navbar-brand {
-    margin: 10px 10px;
+
+  .fixed-top .nav-link {
+    color: var(--color-dark);
   }
 
   .fixed-top .btn-menu {
