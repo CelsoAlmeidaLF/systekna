@@ -423,6 +423,13 @@ footer {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+    .navbar-brand {
+        font-size: 2.8em;
+        padding: 20px 20px;
+        margin: 0;
+    }
+
     .navbar .navbar-collapse {
         display: none;
         visibility: hidden;
