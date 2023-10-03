@@ -31,6 +31,7 @@ window.onscroll = () => {
             links.forEach(link => {
                 link.classList.remove('active');
                 document.querySelector('.navlist .nav-item a[href*='+ id +']').classList.add('active');
+                document.querySelector(".navbar-collapse").classList.remove("open");
             });
 
         }
